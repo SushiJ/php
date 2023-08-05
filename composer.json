@@ -1,0 +1,15 @@
+{
+  "name": "sushi/notes",
+  "authors": [
+    {
+      "name": "Sushij",
+      "email": "sushant.wurk@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Internal\\": "Internal/",
+      "Http\\": "Http/"
+    }
+  }
+}

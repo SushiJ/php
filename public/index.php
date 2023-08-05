@@ -1,17 +1,17 @@
 <?php
 
-use Internal\Session;
+// TODO: Do some forms with exception handling
 
-session_start();
+use Internal\Session;
 
 const BASE_PATH = __DIR__ . "/../";
 
+require BASE_PATH . 'vendor/autoload.php';
+
+session_start();
+
 require BASE_PATH . "Internal/functions.php";
 
-spl_autoload_register(function ($class) {
-    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
-    require withBasePath("{$class}.php");
-});
 
 require withBasePath("bootstrap.php");
 
